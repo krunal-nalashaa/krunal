@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Krunal</title>
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" type="" href="style.css">
+        <link href="css/mobile.css" rel="stylesheet">
     </head>
     <body>
         <div class="nav">
+            <div class="hamburger" id="hamburger" onclick="hamburger('open')">&#9776;</div>
             <img src="Logo-2.png" alt="logo" class="logo">
             <nav>
                 <ul class="navigation">
@@ -18,12 +19,33 @@
                     <li>Resume</li>
                 </ul>
             </nav>
-
-            <a href="" class="button-cta">Contact Us </a>
-
+            <a href="#contact-me" class="button-cta">Contact Us </a>
         </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <nav class="mobile-nav">
+                <ul class="mobile-navigation">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Resume</li>
+                </ul>
+                <div class="close button" id="close-btn" onclick="hamburger('close')"> &#x2715; </div>
+            </nav>
+        </div>
+
         <div class="image">
-            <img src="comming-soon.jpg" alt="" style="width: 80vw; height: auto;">
+            <img src="comming-soon.jpg" alt="" class="comming-soon-image" >
         </div>
+            <script>
+                function hamburger(a){
+                    console.log(a);
+                    if(a ==="open"){
+                        document.getElementById("hamburger-menu").style.display = "block";
+                    }if(a==="close")
+                        document.getElementById("hamburger-menu").style.display = "none";
+                }
+
+
+            </script>
     </body>
 </html>

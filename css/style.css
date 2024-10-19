@@ -21,7 +21,7 @@
 }
 
 .logo{
-    height: 2.5rem;
+    height: 3.5rem;
     width: auto;
 }
 
@@ -37,3 +37,11 @@
     align-items: center;
     padding: 12px 24px;
 }
+.hamburger{
+    display: none;
+    font-size: 36px;
+}
+.comming-soon-image{
+width: 80vw; height: auto;
+}
+
