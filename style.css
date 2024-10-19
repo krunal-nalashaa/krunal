@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    background: #fff;
+    max-width: 80%;
+    font-family: "Open Sans", sans-serif;
+    margin: auto;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+    list-style: none;
+    color:#6D6D6D;
+}
+
+.logo{
+    height: 2.5rem;
+    width: auto;
+}
+
+.button-cta{
+    padding: 12px 24px;
+    background: #FED800;
+    border-radius: 4px ;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+}
