@@ -6,10 +6,12 @@
         <title>Krunal</title>
         <link href="css/style.css" rel="stylesheet">
         <link href="css/mobile.css" rel="stylesheet">
+
+        <script src="script/main.js"></script>
     </head>
     <body>
         <div class="nav">
-            <div class="hamburger" id="hamburger" onclick="hamburger('open')">&#9776;</div>
+            <div class="hamburger" id="hamburger" onclick="hamburger()">&#9776;</div>
             <img src="Logo-2.png" alt="logo" class="logo">
             <nav>
                 <ul class="navigation">
@@ -29,23 +31,40 @@
                     <li>Projects</li>
                     <li>Resume</li>
                 </ul>
-                <div class="close button" id="close-btn" onclick="hamburger('close')"> &#x2715; </div>
             </nav>
         </div>
 
         <div class="image">
             <img src="comming-soon.jpg" alt="" class="comming-soon-image" >
         </div>
-            <script>
-                function hamburger(a){
-                    console.log(a);
-                    if(a ==="open"){
-                        document.getElementById("hamburger-menu").style.display = "block";
-                    }if(a==="close")
-                        document.getElementById("hamburger-menu").style.display = "none";
-                }
 
+            <div class="footer">
 
-            </script>
+                <footer>
+                    <div>
+                        <img src="Logo-2.png" alt="logo" class="logo">
+                    </div>
+                    <div>
+                        <ul class="footer-nav">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Projects</li>
+                            <li>Resume</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="social">
+                            <li>Linkedin</li>
+                            <li>Insta</li>
+                            <li>Dribble</li>
+                        </ul>
+                    </div>
+                </footer>
+                <div class="seprater"> </div>
+                <div style="display: flex;justify-content: center; color:#b9b9b9";>
+                    <span>&copy; Krunal <span>
+                </div>
+            </div>
+
     </body>
 </html>
